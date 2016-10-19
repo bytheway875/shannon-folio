@@ -14,13 +14,13 @@ export default Ember.Component.extend({
   },
   keyDown(e) {
     // right arrow
-    if ((e.keyCode || e.which) == 39)
+    if ((e.keyCode || e.which) === 39)
     {
       this._transitionToNext();
         // do something
     }
     // // left arrow
-    // if ((e.keyCode || e.which) == 37)
+    // if ((e.keyCode || e.which) === 37)
     // {
     //     // do something
     // }

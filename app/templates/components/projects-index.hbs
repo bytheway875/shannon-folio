@@ -1,0 +1,92 @@
+<h3> projects </h3>
+<div class="project-flex">
+  {{
+    project-box
+    name="Emberitas"
+    projectType="Passion Project"
+    image="/images/emberitas-screenshot.png"
+    alt="emberitas project screenshot"
+    details="Emberitas is a free one-day, two-track workshop for teaching women Ember.js. We develop the curriculum, secure sponsorships, get volunteers - everything we need to create a great educational experience for students."
+  }}
+
+  {{
+    project-box
+    name="Emberitas Intermediate"
+    projectType="Passion Project"
+    image="/images/emberitas-intermediate-screenshot.png"
+    alt="emberitas intermediate screenshot"
+    details="This is the curriculum I developed for the first Intermediate Emberitas workshop. We encourage attendees to make PRs to the documentation and workshop repo so they can get a non-judgemental, no-drama introduction to open source contributions."
+  }}
+
+  {{
+    project-box
+    name="Cashrice"
+    projectType="Freelance Project"
+    image="/images/cashrice-screenshot.png"
+    alt="cashrice project screenshot"
+    details="I did the back-end work for this commericial rice marketplace. It includes both consumer- and admin-facing portals."
+  }}
+
+  {{
+    project-box
+    name="Ember Groceries"
+    projectType="Practice Project (Ember)"
+    image="/images/grocery-screenshot.png"
+    alt="grocery project screenshot"
+    details="A quick-and-dirty checkout basket in Ember, employing a custom service to create and manage pricing and discounts."
+  }}
+
+  {{
+    project-box
+    name="URL Shortener"
+    projectType="Practice Project (Ruby/Rails)"
+    image="/images/url-screenshot.png"
+    alt="url shortener screenshot"
+    details="A simple (and old!) Ruby on Rails project for creating shortened urls"
+  }}
+
+  {{
+    project-box
+    name="History Chat"
+    projectType="Practice Project (Node/Express/Socket.io)"
+    image="/images/history-screenshot.png"
+    alt="history chat screenshot"
+    details="A Socket.io chat application with a twist. Users are randomly assigned to chat as a historical figure, and I grab some simple information from Wikipedia to help users learn more about their figure."
+  }}
+
+  {{
+    project-box
+    name="yodlee_wrap"
+    projectType="Ruby Gem"
+    background="ruby-gem"
+    details="A ruby gem I created to wrap the latest version of Yodlee's FinTech API. Forked from the Yodleeicious Gem, which supported an older version of the API."
+  }}
+
+  {{
+    project-box
+    name="Genius Products"
+    projectType="Work Project"
+    image="/images/slg-screenshot.png"
+    alt="student loan genius project screenshot"
+    details="At Student Loan Genius, I worked the full-stack on several Rails applications (both with templating and as an API), on several consumer-facing Ember applications, and on an ES6 Javascript loan amortization tool."
+  }}
+
+  {{
+    project-box
+    name="Vineya"
+    projectType="Work Project"
+    image="/images/vineya-screenshot.png"
+    alt="vineya project screenshot"
+    details="In my first year at Student Loan Genius, I worked primarily on a Ruby on Rails app. After our front-end developer left, I learned Ember to take over the management of our front-end JS applications."
+  }}
+
+
+</div>
+
+<div {{action 'toPrevious'}} class="nav-chev left">
+  {{inline-svg 'cheveron-outline-left'}}
+</div>
+
+<div {{action 'toNext'}} class="nav-chev right">
+  {{inline-svg 'cheveron-outline-right'}}
+</div>

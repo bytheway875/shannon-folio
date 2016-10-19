@@ -1,0 +1,9 @@
+{{#if image}}
+  <div class="project-screenshot" data-name={{name}} data-desc={{projectType}} style='background-image: url({{image}})'>
+    {{project-details name=name projectType=projectType details=details show=showInfo}}
+  </div>
+{{else}}
+  <div class="project-screenshot {{background}}" data-name={{name}} data-desc={{projectType}}>
+    {{project-details name=name projectType=projectType details=details show=showInfo}}
+  </div>
+{{/if}}

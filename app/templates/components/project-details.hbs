@@ -1,3 +1,12 @@
 <h3>{{name}}</h3>
 <div class="project-type">{{projectType}}</div>
 <p>{{details}}</p>
+
+<div class="links">
+  {{#if githubLink}}
+    <a href={{githubLink}} target="_blank" class="github-link">Source Code</a>
+  {{/if}}
+  {{#if webLink}}
+    <a href={{webLink}} target="_blank" class="web-link">Production App</a>
+  {{/if}}
+</div>

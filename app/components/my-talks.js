@@ -2,14 +2,15 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   router: Ember.inject.service('-routing'),
-  classNames: ['about', 'content-section'],
+  classNames: ['talks', 'content-section'],
   didInsertElement(){
-    Ember.$('.nav a').removeClass('dark')
+    Ember.$('.nav a').addClass('dark')
 
   },
   didRender: function() {
     this.$().attr({ tabindex: 1 });
     this.$().focus();
+
   },
   keyDown(e) {
     // right arrow
@@ -33,10 +34,10 @@ export default Ember.Component.extend({
     }
   },
   _transitionToNext(){
-    this.get('router').transitionTo('projects');
+    this.get('router').transitionTo('contact');
   },
   _transitionToPrevious(){
-    this.get('router').transitionTo('index');
+    this.get('router').transitionTo('projects');
   }
 
 });

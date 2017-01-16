@@ -4,13 +4,12 @@ export default Ember.Component.extend({
   router: Ember.inject.service('-routing'),
   classNames: ['projects', 'content-section'],
   didInsertElement(){
-    // let hello = Ember.$('.hello');
-    // TweenMax.from(hello, 3, { ease: Back.easeOut.config(1.7), backgroundColor: "#dbc3d0" });
-    // TweenMax.to(Ember.$('.hello p'), 3, { opacity: 1, delay: 1 });
   },
   didRender: function() {
     this.$().attr({ tabindex: 1 });
     this.$().focus();
+    Ember.$('.nav a').removeClass('dark')
+
   },
   keyDown(e) {
     // right arrow
@@ -34,8 +33,7 @@ export default Ember.Component.extend({
     }
   },
   _transitionToNext(){
-    this.get('router').transitionTo('about');
-
+    this.get('router').transitionTo('talks');
   },
   _transitionToPrevious(){
     this.get('router').transitionTo('about');

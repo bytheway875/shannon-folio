@@ -10,6 +10,8 @@ Router.map(function() {
   this.route('projects', function() {
     this.route('emberitas');
   });
+  this.route('talks');
+  this.route('contact');
 });
 
 export default Router;

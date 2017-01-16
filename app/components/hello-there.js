@@ -11,6 +11,7 @@ export default Ember.Component.extend({
   didRender: function() {
     this.$().attr({ tabindex: 1 });
     this.$().focus();
+    Ember.$('.nav a').removeClass('dark')
   },
   keyDown(e) {
     // right arrow
